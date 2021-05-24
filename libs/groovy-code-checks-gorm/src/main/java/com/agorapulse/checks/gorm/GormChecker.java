@@ -98,7 +98,7 @@ public class GormChecker extends AbstractASTTransformation {
 
         ClassCodeVisitorSupport support = new ClassCodeVisitorSupport() {
 
-            private ClassNode currentClass = null;
+            private ClassNode currentClass;
 
             @Override
             public void visitClass(ClassNode node) {
