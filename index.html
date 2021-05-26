@@ -92,14 +92,19 @@ $(addBlockSwitches);
 <h1>Groovy Code Checks</h1>
 <div class="details">
 <span id="author" class="author">Vladimir Orany</span><br>
-<span id="revnumber">version 0.9.0</span>
+<span id="revnumber">version 1.0.0</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a></li>
-<li><a href="#_usage">2. Usage</a></li>
-<li><a href="#_links">3. Links</a></li>
+<li><a href="#_installation">2. Installation</a></li>
+<li><a href="#_usage">3. Usage</a>
+<ul class="sectlevel2">
+<li><a href="#_gorm">3.1. GORM</a></li>
+</ul>
+</li>
+<li><a href="#_links">4. Links</a></li>
 </ul>
 </div>
 </div>
@@ -108,20 +113,35 @@ $(addBlockSwitches);
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Lorem ipsum dolor sit amet</p>
+<p>This project contains additional code checkers for Groovy programming language.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_usage"><a class="anchor" href="#_usage"></a>2. Usage</h2>
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>2. Installation</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Lorem ipsum dolor sit amet</p>
+<div class="listingblock">
+<div class="title">Gradle</div>
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="groovy">compileOnly 'com.agorapulse:groovy-code-checks-gorm:1.0.0'</code></pre>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_links"><a class="anchor" href="#_links"></a>3. Links</h2>
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>3. Usage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_gorm"><a class="anchor" href="#_gorm"></a>3.1. GORM</h3>
+<div class="paragraph">
+<p>The Groovy Code Check for GORM finds the usages of GORM  instance and static API on an entity such as <code>save()</code>
+to enforce usage of GORM Data Services.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>4. Links</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="api/index.html" target="_blank" rel="noopener">Javadoc</a></p>
@@ -134,8 +154,8 @@ $(addBlockSwitches);
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.9.0<br>
-Last updated 2021-05-24 14:15:19 UTC
+Version 1.0.0<br>
+Last updated 2021-05-25 09:10:22 +0200
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
