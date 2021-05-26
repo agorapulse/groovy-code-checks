@@ -102,6 +102,10 @@ public class GormChecker extends AbstractASTTransformation {
 
             @Override
             public void visitClass(ClassNode node) {
+                if (node.getName() != null && node.getName().endsWith("DataService")) {
+                    // this might be a legacy bridge or an abstract implementation of the data service
+                    return;
+                }
                 this.currentClass = node;
                 super.visitClass(node);
                 this.currentClass = null;
@@ -133,6 +137,13 @@ public class GormChecker extends AbstractASTTransformation {
             }
 
             private ClassNode getType(MethodCall call) {
+                if (call instanceof ClassNode) {
+                    return (ClassNode) call;
+                }
+
+                if (!(call instanceof Expression)) {
+                    return null;
+                }
                 Expression object = (Expression) call.getReceiver();
 
                 if (object.getColumnNumber() < 0 || object.getLineNumber() < 0) {
