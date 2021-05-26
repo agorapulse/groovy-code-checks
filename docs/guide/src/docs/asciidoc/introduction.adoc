@@ -2,4 +2,4 @@
 [[_introduction]]
 = Introduction
 
-Lorem ipsum dolor sit amet
+This project contains additional code checkers for Groovy programming language.

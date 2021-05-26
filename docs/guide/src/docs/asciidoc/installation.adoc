@@ -1,0 +1,9 @@
+
+[[_installation]]
+= Installation
+
+[source,groovy,subs='verbatim,attributes']
+.Gradle
+----
+compileOnly 'com.agorapulse:groovy-code-checks-gorm:{project-version}'
+----

@@ -2,4 +2,8 @@
 [[_usage]]
 = Usage
 
-Lorem ipsum dolor sit amet
+== GORM
+
+The Groovy Code Check for GORM finds the usages of GORM  instance and static API on an entity such as `save()`
+to enforce usage of GORM Data Services.
+
