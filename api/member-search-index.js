@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"com.agorapulse.checks.gorm","c":"GormChecker","l":"GormChecker()","url":"%3Cinit%3E()"},{"p":"com.agorapulse.checks.gorm","c":"GormChecker","l":"visit(ASTNode[], SourceUnit)","url":"visit(org.codehaus.groovy.ast.ASTNode[],org.codehaus.groovy.control.SourceUnit)"}]
